@@ -123,7 +123,7 @@ fun HomeScreen(navController: NavHostController, recipeViewModel: RecipeViewMode
 
     LaunchedEffect(Unit) {
         try {
-            recipeViewModel.fetchRecipes("d2370b36e7244965a8dbbd0d692aa5d0", 25)
+            recipeViewModel.fetchRecipes("babb0844766243ccb9cf4d2ce3fe113d", 25)
         } catch (e: Exception) {
             Toast.makeText(context, "Error fetching recipes: ${e.message}", Toast.LENGTH_SHORT).show()
         }

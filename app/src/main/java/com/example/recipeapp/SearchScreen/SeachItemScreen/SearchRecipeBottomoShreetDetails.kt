@@ -90,7 +90,7 @@ fun RecipeDetailBottomSheet(
     LaunchedEffect(recipeDetails) {
         coroutineScope.launch {
             try {
-                recipeDetails?.id?.let { recipeViewModel.fetchRecipeDetails("d2370b36e7244965a8dbbd0d692aa5d0", it) }
+                recipeDetails?.id?.let { recipeViewModel.fetchRecipeDetails("babb0844766243ccb9cf4d2ce3fe113d", it) }
             } catch (e: Exception) {
                 Toast.makeText(context, "Error fetching recipe details: ${e.message}", Toast.LENGTH_SHORT).show()
             }

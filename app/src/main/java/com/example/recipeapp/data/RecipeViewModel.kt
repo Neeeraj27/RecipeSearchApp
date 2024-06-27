@@ -78,7 +78,7 @@ class RecipeViewModel(private val context: Context, private val recipeApi: Recip
     fun searchRecipes(query: String) {
         viewModelScope.launch {
             try {
-                val response = recipeApi.searchRecipes(apiKey = "d2370b36e7244965a8dbbd0d692aa5d0", query = query)
+                val response = recipeApi.searchRecipes(apiKey = "babb0844766243ccb9cf4d2ce3fe113d", query = query)
                 _searchResults.value = response.results ?: emptyList()
                 Log.d("SearchResponse", response.toString())
 
